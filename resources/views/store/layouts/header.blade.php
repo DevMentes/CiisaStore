@@ -29,8 +29,8 @@
 
                         <div class="collapse navbar-collapse" id="js-navbar-menu">
                             <ul class="nav navbar-nav navbar-right ep-mobile-menu" id="navbar-nav">
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="shop-page.html">Tienda</a></li>
+                                <li class="active"><a href="{{ url('/') }}">Home</a></li>
+                                <li><a href="{{ url('/products')  }}">Tienda</a></li>
                                 <li><a href="single-shop.html">Producto</a></li>
 
                             </ul>
