@@ -68,6 +68,8 @@
 
 @yield('product_detail')
 
+@yield('cart')
+
 @yield('footer')
 
 <!--

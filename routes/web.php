@@ -16,3 +16,7 @@ Route::get('/', 'IndexController@index');
 Route::get('/products', 'ListProductsController@list');
 
 Route::get('/products/detail', 'ProductDetailsController@view');
+
+Route::get('/cart', 'CartController@view');
+
+Route::get('/verify', 'VerifyController@verify');
