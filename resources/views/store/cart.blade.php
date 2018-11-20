@@ -11,8 +11,8 @@
                     <div class="user-nav pull-right col-md-6 col-sm-6 col-xs-12">
                         <ul>
 
-                            <li><a href="">Verificar</a></li>
-                            <li><a href="">Iniciar Sesion</a></li>
+                            <li><a href="verify">Verificar</a></li>
+                            <li><a href="login">Iniciar Sesion</a></li>
                         </ul>
                     </div>
                 </div>

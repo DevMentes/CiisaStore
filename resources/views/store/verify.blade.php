@@ -11,8 +11,8 @@
                     <div class="user-nav pull-right col-md-6 col-sm-6 col-xs-12">
                         <ul>
 
-                            <li><a href="">Verificar</a></li>
-                            <li><a href="">Iniciar Sesion</a></li>
+                            <li><a href="verify">Verificar</a></li>
+                            <li><a href="login">Iniciar Sesion</a></li>
                         </ul>
                     </div>
                 </div>
@@ -32,9 +32,9 @@
 
                         <div class="collapse navbar-collapse" id="js-navbar-menu">
                             <ul class="nav navbar-nav navbar-right ep-mobile-menu" id="navbar-nav">
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="shop-page.html">Tienda</a></li>
-                                <li><a href="single-shop.html">Producto</a></li>
+                                <li class="active"><a href="index.php">Home</a></li>
+                                <li><a href="products">Tienda</a></li>
+                                <li><a href="products/detail">Producto</a></li>
 
                             </ul>
                         </div>

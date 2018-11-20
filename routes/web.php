@@ -20,3 +20,5 @@ Route::get('/products/detail', 'ProductDetailsController@view');
 Route::get('/cart', 'CartController@view');
 
 Route::get('/verify', 'VerifyController@verify');
+
+Route::get('/login', 'VerifyController@login');
