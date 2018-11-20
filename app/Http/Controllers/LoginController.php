@@ -4,11 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class VerifyController extends Controller
+class LoginController extends Controller
 {
-
     public function login()
     {
-        return view('store.login);
+        return view('store.login');
     }
 }

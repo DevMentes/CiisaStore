@@ -1,7 +1,7 @@
 @extends('store.layouts.app')
 @extends('store.layouts.footer')
 
-@section('login')
+@section('cart')
     <header id="xt-home" class="xt-header">
         <div class="header-top">
             <div class="container">
@@ -43,33 +43,42 @@
             </nav>
         </div>
     </header>
-
-
-    <!--<section class="xt-xt-single-product">
-        <div class="container">
+    <div class="cart-table-area section-padding-100">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-3 visible-xs visible-sm padding-right-o"></div>
-                <div class="col-md-9 col-md-offset-3 padding-o">
-                    <div class="xt-product-inner">
-                        <div class="col-md-5">
-
-                        <div class="col-md-7">
-                            <div class="each-product-info">
-                                <h3>Nike Sneaker</h3>
-                                <span class="single-price"><b>Subtotal:</b> $260</span>
-                                <br>
-                                <span class="single-price"><b>Total:</b> $260</span>
-
-                                <div class="product-add-cart">
-                                    <a href="" class="btn btn-fill">Registrar y Pagar</a>
+                <div class="container">
+                    <div class="col-40 col-lg-4">
+                        <h3>Iniciar sesion</h3>
+                        <div id="form_user_verify">
+                            <form>
+                                
+                                <div class="form-group">
+                                    <label for="">Email</label>
+                                    <input type="email" class="form-control"  name="email" s>
 
                                 </div>
+                                
+                                    
+                                    <label for="">Password</label>
+                                    <input type="password" class="form-control"  name="password">
 
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-7">
+                            <div class="each-product-info">
+                            <div class="cart-btn mt-100">
+                                <a href="#" class="btn amado-btn w-100">Registrar</a>
                             </div>
+                        
                         </div>
                     </div>
                 </div>
-            </div>
+                </div>
+
         </div>
-    </section> -->
+    </div>
+
 @endsection
