@@ -8,7 +8,7 @@
                     <div class="user-nav pull-right col-md-6 col-sm-6 col-xs-12">
                         <ul>
 
-                            <li><a href="verify">Verificar</a></li>
+                            <li><a href="{{ url('/verify')  }}">Verificar </a></li>
                             <li><a href="{{ url('/login')  }}">Iniciar Sesion</a></li>
                         </ul>
                     </div>
@@ -24,12 +24,12 @@
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                                 <span aria-hidden="true" class="icon"></span>
                             </button>
-                            <a class="navbar-brand" href="index.php"><img src="{{ asset('images/logociisa.png')  }}" alt="" class="img-responsive"></a>
+                            <a class="navbar-brand" href="{{ url('/')  }}"><img src="{{ asset('images/logociisa.png')  }}" alt="" class="img-responsive"></a>
                         </div>
 
                         <div class="collapse navbar-collapse" id="js-navbar-menu">
                             <ul class="nav navbar-nav navbar-right ep-mobile-menu" id="navbar-nav">
-                                <li class="active"><a href="">Home</a></li>
+                                <li class="active"><a href="{{ url('/')  }}">Home</a></li>
                                 <li><a href="{{ url('/products')  }}">Tienda</a></li>
                                 <li><a href="{{ url('/products/detail')  }}">Producto</a></li>
 
@@ -79,7 +79,7 @@
                             <ul>
                                 <li class="dropdown">
                                     <a href="" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
-                                        <i class="fa flaticon-shopping-cart"></i>
+                                       <a href="{{ url('/cart')  }}"><i class="fa flaticon-shopping-cart"></i></a>
                                     </a>
                                     <ul class="dropdown-menu xt-cart-items">
                                     <li>

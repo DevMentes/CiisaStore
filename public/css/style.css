@@ -941,7 +941,7 @@ p {
   text-align: center;
 }
 .main-color-bg {
-  background-color: #f26667;
+  background-color: #1BB449 ;
   color: #fff;
 }
 .margin-top-o {
@@ -1784,7 +1784,7 @@ ul li {
   font-weight: normal;
 }
 .xt-client-carousel {
-  background: #f857a6;
+  background: black;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #ff5858, #f857a6);
   /* Chrome 10-25, Safari 5.1-6 */

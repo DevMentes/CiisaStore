@@ -11,8 +11,8 @@
                     <div class="user-nav pull-right col-md-6 col-sm-6 col-xs-12">
                         <ul>
 
-                            <li><a href="verify">Verificar</a></li>
-                            <li><a href="login">Iniciar Sesion</a></li>
+                            <li><a href="{{ url('/verify')  }}">Verificar</a></li>
+                            <li><a href="{{ url('/login')  }}">Iniciar Sesion</a></li>
                         </ul>
                     </div>
                 </div>
@@ -27,14 +27,14 @@
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                                 <span aria-hidden="true" class="icon"></span>
                             </button>
-                            <a class="navbar-brand" href="index.html"><img src="{{ asset('images/logociisa.png')  }}" alt="" class="img-responsive"></a>
+                            <a class="navbar-brand" href="{{ url('/')  }}"><img src="{{ asset('images/logociisa.png')  }}" alt="" class="img-responsive"></a>
                         </div>
 
                         <div class="collapse navbar-collapse" id="js-navbar-menu">
                             <ul class="nav navbar-nav navbar-right ep-mobile-menu" id="navbar-nav">
-                                <li class="active"><a href="index.php">Home</a></li>
-                                <li><a href="products">Tienda</a></li>
-                                <li><a href="products/detail">Producto</a></li>
+                                <li class="active"><a href="{{ url('/')  }}">Home</a></li>
+                                <li><a href="{{ url('/products')  }}">Tienda</a></li>
+                                <li><a href="{{ url('/products/detail')  }}">Producto</a></li>
 
                             </ul>
                         </div>
@@ -110,8 +110,10 @@
                                     <input type="checkbox" class="custom-control-input" id="paypal">
                                     <label class="custom-control-label" for="paypal">Paypal <img class="ml-15" src="img/core-img/paypal.png" alt=""></label>
                                 </div>
+<br>
+                                 <img src="images/payment.png" style="width:200px ; height: 30px;" alt="" class="img-responsive">
                             </div>
-
+<br>
                             <div class="cart-btn mt-100">
                                 <a href="#" class="btn amado-btn w-100">Pagar</a>
                             </div>

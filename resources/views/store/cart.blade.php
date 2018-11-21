@@ -11,8 +11,8 @@
                     <div class="user-nav pull-right col-md-6 col-sm-6 col-xs-12">
                         <ul>
 
-                            <li><a href="verify">Verificar</a></li>
-                            <li><a href="login">Iniciar Sesion</a></li>
+                            <li><a href="{{ url('/verify')  }}">Verificar</a></li>
+                            <li><a href="{{ url('/login')  }}">Iniciar Sesion</a></li>
                         </ul>
                     </div>
                 </div>
@@ -27,14 +27,14 @@
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                                 <span aria-hidden="true" class="icon"></span>
                             </button>
-                            <a class="navbar-brand" href="index.html"><img src="{{ asset('images/logociisa.png')  }}" alt="" class="img-responsive"></a>
+                            <a class="navbar-brand" href="{{ url('/')  }}"><img src="{{ asset('images/logociisa.png')  }}" alt="" class="img-responsive"></a>
                         </div>
 
                         <div class="collapse navbar-collapse" id="js-navbar-menu">
                             <ul class="nav navbar-nav navbar-right ep-mobile-menu" id="navbar-nav">
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="shop-page.html">Tienda</a></li>
-                                <li><a href="single-shop.html">Producto</a></li>
+                                <li class="active"><a href="{{ url('/')  }}">Home</a></li>
+                                <li><a href="{{ url('/products')  }}">Tienda</a></li>
+                                <li><a href="{{ url('/products/detail')  }}">Producto</a></li>
 
                             </ul>
                         </div>
@@ -65,7 +65,7 @@
                                 <tbody>
                                 <tr>
                                     <td class="cart_product_img">
-                                        <a href="#"><img src="img/lenovo1.png" alt="Product"></a>
+                                        <a href="#"><img src="images/lenovo1.png" style="width:100px ; height: 80px"; alt="Product"></a>
                                     </td>
                                     <td class="cart_product_desc">
                                         <h5>Notebook Lenovo Z400</h5>
@@ -86,13 +86,13 @@
                                 </tr>
                                 <tr>
                                     <td class="cart_product_img">
-                                        <a href="#"><img src="img/lamp1.jpg" alt="Product"></a>
+                                        <a href="#"><img src="images/BEATS.JPG" style="width:100px ; height: 80px"; alt="Product"></a>
                                     </td>
                                     <td class="cart_product_desc">
-                                        <h5>Lamparas de Flores</h5>
+                                        <h5>Audifonos Beats</h5>
                                     </td>
                                     <td class="price">
-                                        <span>$10.000</span>
+                                        <span>$35.000</span>
                                     </td>
                                     <td class="qty">
                                         <div class="qty-btn d-flex">
@@ -113,12 +113,12 @@
                     <div class="col-12 col-lg-4">
                         <div class="each-product-info">
                             <h3>Carro total  </h3>
-                            <span class="single-price"><b>Subtotal:</b> $260</span>
+                            <span class="single-price"><b>Subtotal:</b> $534.000</span>
                             <br>
-                            <span class="single-price"><b>Total:</b> $260</span>
+                            <span class="single-price"><b>Total:</b> $534.000</span>
 
                             <div class="product-add-cart">
-                                <a href="" class="btn btn-fill">Registrar y Pagar</a>
+                                <a href="{{ url('/verify')  }}" class="btn btn-fill">Registrar y Pagar</a>
 
                             </div>
 

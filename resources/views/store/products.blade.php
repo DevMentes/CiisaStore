@@ -255,37 +255,9 @@
                                 <hr class="xt-hr">
                             </div>
                             <div class="xt-filter-nav padding-bottom-60">
-                                <div class="col-md-2 col-sm-2 col-xs-6">
-                                    <div class="xt-view">
-                                        <a href="" class="active"><i class="fa fa-th-large"></i></a>
-                                        <a href=""><i class="fa fa-navicon"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-3 col-xs-6 xt-show-item">
-                                    <label>Show: </label>
-                                    <div class="xt-select xt-search-opt xt-item-view-count">
-                                        <select class="xt-category-search select-beast">
-                                            <option>4</option>
-                                            <option>8</option>
-                                            <option>12</option>
-                                            <option>20</option>
-                                            <option>40</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group xt-shop-category col-md-4 col-sm-4 col-xs-12">
-                                    <div class="xt-select xt-search-opt">
-                                        <select class="xt-category-search select-beast">
-                                            <option>Shirt</option>
-                                            <option>Pant</option>
-                                            <option>Jeans</option>
-                                            <option>Jackets</option>
-                                        </select>
-                                    </div>
-                                    <div class="xt-search-opt xt-search-btn">
-                                        <button type="button" class="btn-search"><i class="fa fa-long-arrow-down"></i></button>
-                                    </div>
-                                </div>
+                                
+                                
+                                
                                 <div class="col-md-3 col-sm-3 col-xs-12">
                                     <div class="xt-page-pagination">
                                         <nav aria-label="Page navigation">
