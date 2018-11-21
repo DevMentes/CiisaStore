@@ -394,7 +394,7 @@ a:focus {
   margin-left: 15px;
 }
 .btn.btn-fill {
-  background-color: #f26667;
+  background-color: #1BB449;
   color: #fff;
   border-color: transparent;
 }
@@ -1013,7 +1013,7 @@ ul li {
 }
 .form-control {
   display: block;
-  width: 100%;
+  width: 50%;
   height: 46px;
   padding: 6px 12px;
   font-size: 16px;
@@ -1268,7 +1268,7 @@ ul li {
   width: 100%;
 }
 .navbar-nav li.active a {
-  color: #f26667;
+  color: #1BB449;
 }
 .navbar-right .dropdown-menu .dropdown-menu {
     right: 110%;
@@ -1300,7 +1300,7 @@ ul li {
 }
 .mean-container .mean-bar::before {
   color: #000;
-  content: "All Category";
+  content: "Categorias";
   font-size: 25px;
   font-weight: 600;
   left: 20px;
@@ -1412,7 +1412,7 @@ ul li {
   left: 20px;
   font-size: 10px;
   font-weight: 600;
-  background: #f26667;
+  background: black;
   padding: 0px 8px;
   color: #fff;
 }
@@ -2060,7 +2060,7 @@ nav ul.xt-side-menu > li > ul.xt-dropdown {
   background-color: #fff;
   border-radius: 50%;
   font-size: 14px;
-  color: #f26667;
+  color: black;
   text-align: center;
   line-height: 18px;
 }
@@ -2282,7 +2282,7 @@ nav ul.xt-side-menu > li > ul.xt-dropdown {
   margin-bottom: 10px;
 }
 .each-product-info .single-price {
-  color: #f26667;
+  color: #1BB449;
 }
 .each-product-info .single-price b {
   color: #000;
@@ -2648,7 +2648,7 @@ nav ul.xt-side-menu > li > ul.xt-dropdown {
   opacity: 0.9;
 }
 .xt-page-pagination .xt-pagination .active a {
-  background-color: #f26667;
+  background-color: #1BB449;
   color: #fff;
   border-color: transparent;
 }

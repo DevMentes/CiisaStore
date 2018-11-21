@@ -48,7 +48,8 @@
             <div class="row">
                 <div class="container">
                     <div class="col-12 col-lg-8">
-                        <h3>Ingresa tus datos</h3>
+                    <div class="each-product-info">
+                        <h3>Ingresar datos</h3>
                         <div id="form_user_verify">
                             <form>
                                 <div class="form-group">
@@ -91,6 +92,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-4">
+                    <div class="each-product-info">
                         <div class="cart-summary">
                             <h5>Total Carro de compra</h5>
                             <ul class="summary-table">
@@ -115,9 +117,11 @@
                             </div>
 <br>
                             <div class="cart-btn mt-100">
-                                <a href="#" class="btn amado-btn w-100">Pagar</a>
+                                <a href="#" class="btn btn-fill">Pagar</a>
                             </div>
                         </div>
+                        
+                    </div>
                     </div>
                 </div>
                 </div>

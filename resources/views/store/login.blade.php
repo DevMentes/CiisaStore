@@ -47,7 +47,8 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="container">
-                    <div class="col-40 col-lg-4">
+                    <div class="col-10 col-lg-20">
+                    <div class="each-product-info">
                         <h3>Iniciar sesion</h3>
                         <div id="form_user_verify">
                             <form>
@@ -62,14 +63,15 @@
                                     <label for="">Password</label>
                                     <input type="password" class="form-control"  name="password">
 
-                                </div>
+                                
                                 <br>
                                 <div class="each-product-info">
-                            <div class="cart-btn mt-100">
-                                <a href="#" class="btn amado-btn w-100">Registrar</a>
-                            </div>
+                                    <div class="cart-btn mt-100">
+                                <a href="#" class="btn btn-fill">Registrar</a>
+                                    </div>
                         
-                        </div>
+                              </div>
+
                             </form>
                         </div>
                     </div>

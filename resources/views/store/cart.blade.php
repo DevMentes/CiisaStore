@@ -47,8 +47,8 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="container">
-                    <div class="col-12 col-lg-8">
-                        <div class="cart-title mt-50">
+                <div class="col-12 col-lg-8">
+                    <div class="each-product-info">
                             <h2>Carrito de compras</h2>
                         </div>
 
@@ -110,6 +110,7 @@
                             </table>
                         </div>
                     </div>
+</div>
                     <div class="col-12 col-lg-4">
                         <div class="each-product-info">
                             <h3>Carro total  </h3>
