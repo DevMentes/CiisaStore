@@ -22,3 +22,5 @@ Route::get('/cart', 'CartController@view');
 Route::get('/verify', 'VerifyController@verify');
 
 Route::get('/login', 'LoginController@login');
+
+Route::get('/pay', 'PayController@pay');

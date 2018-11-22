@@ -110,14 +110,14 @@
                                 <!-- Paypal -->
                                 <div class="custom-control custom-checkbox mr-sm-2">
                                     <input type="checkbox" class="custom-control-input" id="paypal">
-                                    <label class="custom-control-label" for="paypal">Paypal <img class="ml-15" src="img/core-img/paypal.png" alt=""></label>
+                                    <label class="custom-control-label" for="paypal">Banco Estado<img class="ml-15" src="img/core-img/paypal.png" alt=""></label>
                                 </div>
 <br>
-                                 <img src="images/payment.png" style="width:200px ; height: 30px;" alt="" class="img-responsive">
+                                 <img src="images/BE.png" style="width:200px ; height: 100px;" alt="" class="img-responsive">
                             </div>
 <br>
                             <div class="cart-btn mt-100">
-                                <a href="#" class="btn btn-fill">Pagar</a>
+                                <a href="{{ url('/pay')  }}" class="btn btn-fill">Pagar</a>
                             </div>
                         </div>
                         
