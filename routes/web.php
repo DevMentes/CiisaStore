@@ -24,3 +24,30 @@ Route::get('/verify', 'VerifyController@verify');
 Route::get('/login', 'LoginController@login');
 
 Route::get('/pay', 'PayController@pay');
+
+
+
+Route::group(['prefix' => 'admin'], function (){
+
+    Route::get('/dashboard', 'Admin\DashboardController@view');
+
+    Route::group(['prefix' => 'mantainers'], function (){
+
+        Route::get('/', 'Admin\MantainersController@view');
+
+        Route::group(['prefix' => 'families'], function (){
+            Route::get('/', 'Mantainers\FamiliesController@list');
+            Route::post('/create', 'Mantainers\FamiliesControlller@store');
+        });
+
+        Route::group(['prefix' => 'productos'], function (){
+            Route::get('/', 'Mantainers\ProductController@list');
+            Route::post('/create', 'Mantainers\ProductControlller@store');
+        });
+
+        Route::group(['prefix' => 'proveedor'], function (){
+            Route::get('/', 'Mantainers\ProveedorController@list');
+            Route::post('/create', 'Mantainers\ProveedorControlller@store');
+        });
+    });
+});

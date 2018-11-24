@@ -47,7 +47,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="container">
-                    <div class="col-12 col-lg-8">
+                    <div class="col-md-8">
                     <div class="each-product-info">
                         <h3>Ingresar datos</h3>
                         <div id="form_user_verify">
@@ -91,7 +91,7 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4">
+                    <div class="col-md-4">
                     <div class="each-product-info">
                         <div class="cart-summary">
                             <h5>Total Carro de compra</h5>

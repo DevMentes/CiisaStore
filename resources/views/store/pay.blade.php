@@ -3,35 +3,22 @@
 @section('cart')
 
  <header id="xt-home" class="xt-header">
-        <div class="header-top">
-            <div class="container">
-                <div class="row">
-       
-        <div class="col-12 col-lg-4" >
-                    <div class="each-product-info">
-                        <div class="cart-summary">
-                        
-                        <h3>Detalle de pago</h3>
-                            <ul class="summary-table">
-                                <li><span>Numero de tarjeta</span></li>
-                                <input type="number" class="custom-control-input" id="num">
-                                <li><span>Clave</span></li>
-                                <input type="password" class="custom-control-input" id="passpay">
-                            </ul>
-
-<br>
-                            <div class="cart-btn mt-100">
-                                <a href="{{ url('/pay')  }}" class="btn btn-fill">Pagar</a> <br> 
-                            </div>
-                            <div class=>
-                                <a href="{{ url('/verify')  }}" class="">Volver</a>
-                            </div>
-                        </div>
-                    </div>
-        </div>   
-        </div>   
-     </div>
- </div>  
+    <div class="header-top">
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="account">Numero de cuenta</label>
+                    <input type="number" id="account" class="form-control" placeholder="Numero de cuenta">
+                </div>
+                <div class="form-group">
+                    <label for="password">Clave</label>
+                    <input type="text" id="password" class="form-control" placeholder="Clave">
+                </div>
+                <button type="button" class="btn btn-warning">Pagar</button>
+                <a class="btn btn-dark" href="{{ url('/verify')  }}">Atras</a>
+            </form>
+        </div>
+    </div>
 </header>
 <div class="footer-bottom">
             <div class="container">
