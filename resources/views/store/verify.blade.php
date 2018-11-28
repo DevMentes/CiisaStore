@@ -11,8 +11,6 @@
                     <div class="user-nav pull-right col-md-6 col-sm-6 col-xs-12">
                         <ul>
 
-                            <li><a href="{{ url('/verify')  }}">Verificar</a></li>
-                            <li><a href="{{ url('/login')  }}">Iniciar Sesion</a></li>
                         </ul>
                     </div>
                 </div>
@@ -22,6 +20,7 @@
         <div class="main-navigation">
             <nav class="navbar navbar-fixed-top nav-scroll">
                 <div class="container">
+                
                     <div class="row">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -76,16 +75,16 @@
                                     <label for="">Direccion</label>
                                     <input type="text" class="form-control"  name="address" placeholder="Nombre de Calle">
 
-                                    <input type="number" class="form-control"  name="address" placeholder="Numero de calle">
+                                    <input type="number" class="form-control"  name="numberaddress" placeholder="Numero de calle">
 
-                                    <select class="form-control" id="sel1">
+                                    <select class="form-control" id="sel1" name="city">
                                         <option>Selecciona Ciudad</option>
                                         <option>Santiago</option>
                                         <option>Chillan</option>
                                         <option>Talca</option>
                                     </select>
 
-                                    <input type="text" class="form-control"  name="address" placeholder="Observacion">
+                                    <input type="text" class="form-control"  name="observation" placeholder="Observacion">
 
                                 </div>
                             </form>
@@ -93,23 +92,18 @@
                     </div>
                     <div class="col-md-4">
                     <div class="each-product-info">
-                        <div class="cart-summary">
-                            <h5>Total Carro de compra</h5>
-                            <ul class="summary-table">
-                                <li><span>subtotal:</span> <span>$509.000</span></li>
+                            <h3>Carro total  </h3>
+                            <hr>
+                            
+                            <span class="single-price"><b>Total:</b> $534.000</span>
 
-                                <li><span>total:</span> <span>$509.000</span></li>
-                            </ul>
-
+                            
+                        </div>
                             <div class="payment-method">
-                                <!-- Cash on delivery -->
-                                <div class="custom-control custom-checkbox mr-sm-2">
-                                    <input type="checkbox" class="custom-control-input" id="cod" checked>
-                                    <label class="custom-control-label" for="cod">Pagar en Delivery</label>
-                                </div>
+                               
                                 <!-- Paypal -->
                                 <div class="custom-control custom-checkbox mr-sm-2">
-                                    <input type="checkbox" class="custom-control-input" id="paypal">
+                                    
                                     <label class="custom-control-label" for="paypal">Banco Estado<img class="ml-15" src="img/core-img/paypal.png" alt=""></label>
                                 </div>
 <br>
@@ -117,7 +111,9 @@
                             </div>
 <br>
                             <div class="cart-btn mt-100">
-                                <a href="{{ url('/pay')  }}" class="btn btn-fill">Pagar</a>
+                                <a href="{{ url('/pay')  }}" class="btn btn-warning">Pagar</a>
+                                <hr>
+                                 <a class="btn btn-dark" href="{{ url('/cart')  }}" >Atras</a>
                             </div>
                         </div>
                         
@@ -129,31 +125,5 @@
         </div>
     </div>
 
-    <!--<section class="xt-xt-single-product">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 visible-xs visible-sm padding-right-o"></div>
-                <div class="col-md-9 col-md-offset-3 padding-o">
-                    <div class="xt-product-inner">
-                        <div class="col-md-5">
-
-                        <div class="col-md-7">
-                            <div class="each-product-info">
-                                <h3>Nike Sneaker</h3>
-                                <span class="single-price"><b>Subtotal:</b> $260</span>
-                                <br>
-                                <span class="single-price"><b>Total:</b> $260</span>
-
-                                <div class="product-add-cart">
-                                    <a href="" class="btn btn-fill">Registrar y Pagar</a>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
+    
 @endsection

@@ -8,13 +8,6 @@
                 <div class="row">
 
 
-                    <div class="user-nav pull-right col-md-6 col-sm-6 col-xs-12">
-                        <ul>
-
-                            <li><a href="{{ url('/verify')  }}">Verificar</a></li>
-                            <li><a href="{{ url('/login')  }}">Iniciar Sesion</a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
@@ -43,6 +36,7 @@
             </nav>
         </div>
     </header>
+    <hr>
     <div class="cart-table-area section-padding-100">
         <div class="container-fluid">
             <div class="row">
@@ -114,12 +108,17 @@
                     <div class="col-12 col-lg-4">
                         <div class="each-product-info">
                             <h3>Carro total  </h3>
+                            <hr>
                             <span class="single-price"><b>Subtotal:</b> $534.000</span>
                             <br>
+                            <span class="single-price"><b>Descuento:</b> $0</span>
+                            <br>
                             <span class="single-price"><b>Total:</b> $534.000</span>
+                            <br>
+                            <span class="single-price"><b>Cantidad:</b> 2</span>
 
                             <div class="product-add-cart">
-                                <a href="{{ url('/verify')  }}" class="btn btn-fill">Registrar y Pagar</a>
+                                <a href="{{ url('/verify')  }}" class="btn btn-warning">Registrar y Pagar</a>
 
                             </div>
 

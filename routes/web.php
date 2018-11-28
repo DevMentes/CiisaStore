@@ -25,6 +25,9 @@ Route::get('/login', 'LoginController@login');
 
 Route::get('/pay', 'PayController@pay');
 
+Route::get('/ticket', function (){
+    return view('store.boleta');
+}) ;
 
 
 Route::group(['prefix' => 'admin'], function (){

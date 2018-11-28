@@ -13,6 +13,15 @@
                         <ul class="slides">
 
                             <li>
+                                <img src="{{ asset ('images/BEATS.JPG') }}" style="width:600px ;height: 500px"  alt="" />
+                                <div class="slide_text">
+                                    <span class="slide-category">Tecnologia</span>
+                                    <h2 class="slide_title ">Audifonos<br> BEATS</h2>
+                                    <p class="slide_byline ">Audifonos BEATS inalambrico </p>
+                                    <a href="{{ url('/products/detail')  }}" class="btn btn-info ">Ver</a>
+                                </div>
+                            </li>
+                       <!--     <li>
                                 <img src="{{ asset ('images/lenovo1.png') }}" style="width:600px ;height: 500px"  alt="" />
                                 <div class="slide_text">
                                     <span class="slide-category">Tecnologia</span>
@@ -21,7 +30,7 @@
                                     <a href="" class="btn btn-fill ">Ver</a>
                                 </div>
                             </li>
-                            <li>
+                           <li>
                                 <img src="{{ asset ('images/lamp1.jpg') }}" style="width:500px ;height: 500px" alt="" />
                                 <div class="slide_text">
                                     <span class="slide-category">Decohogar </span>
@@ -29,7 +38,7 @@
                                     <p class="slide_byline "> Lampara 4 flores, color blanca</p>
                                     <a href="" class="btn btn-fill ">Ver</a>
                                 </div>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
 

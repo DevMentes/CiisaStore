@@ -1,12 +1,30 @@
 @extends('store.layouts.app')
 
 @section('cart')
+<header id="xt-home" class="xt-header">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
 
+
+                    <div class="user-nav pull-right col-md-6 col-sm-6 col-xs-12">
+                        <ul>
+
+                            
+                            <li><a href="{{ url('/')  }}">Volver a Home</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </header>
  <header id="xt-home" class="xt-header">
     <div class="header-top">
         <div class="container">
             <form>
+            
                 <div class="form-group">
+                <h4>Transacción</h4>
                     <label for="account">Numero de cuenta</label>
                     <input type="number" id="account" class="form-control" placeholder="Numero de cuenta">
                 </div>
@@ -14,7 +32,9 @@
                     <label for="password">Clave</label>
                     <input type="text" id="password" class="form-control" placeholder="Clave">
                 </div>
-                <button type="button" class="btn btn-warning">Pagar</button>
+                <br>
+                
+                <a type="button" href="{{ url('/ticket')  }}" class="btn btn-warning">Pagar</a>
                 <a class="btn btn-dark" href="{{ url('/verify')  }}">Atras</a>
             </form>
         </div>

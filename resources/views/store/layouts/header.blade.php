@@ -2,16 +2,10 @@
     <header id="xt-home" class="xt-header">
         <div class="header-top">
             <div class="container">
+            
                 <div class="row">
 
 
-                    <div class="user-nav pull-right col-md-6 col-sm-6 col-xs-12">
-                        <ul>
-
-                            <li><a href="{{ url('/verify')  }}">Verificar </a></li>
-                            <li><a href="{{ url('/login')  }}">Iniciar Sesion</a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
@@ -24,7 +18,7 @@
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                                 <span aria-hidden="true" class="icon"></span>
                             </button>
-                            <a class="navbar-brand" href="{{ url('/')  }}"><img src="{{ asset('images/logociisa.png')  }}" alt="" class="img-responsive"></a>
+                            <a class="navbar-brand" href="{{ url('/')  }}"><img src="{{ asset('images/logociisa.png')  }}" class="img-responsive"></a>
                         </div>
 
                         <div class="collapse navbar-collapse" id="js-navbar-menu">
@@ -51,15 +45,12 @@
                                         <a href="#">Categoria</a>
                                         <ul class="xt-dropdown">
                                             <li>
-                                                <a  href="single-shop.html"><i class="fa flaticon-glasses"></i> Tecnologia </a>
+                                                <a  href="{{ url('/products')  }}"><i class=""></i> Tecnologia </a>
 
 
                                             </li>
-                                            <li>
-                                                <a  href="single-shop.html"><i class="fa flaticon-dress"></i> Jardin & Terrazas</a>
-
-                                            </li>
-                                            <li><a href="single-shop.html"><i class="fa flaticon-high-heel"></i> Decohogar</a></li>
+                                            
+                                            <li><a href="{{ url('/products')  }}"><i class=""></i> Decohogar</a></li>
 
                                         </ul>
                                     </li>
