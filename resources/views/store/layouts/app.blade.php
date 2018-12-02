@@ -93,13 +93,15 @@
             <div class="col-md-3">
                 <sidebar>
                     <div id="families-sidebar"style="margin-top: -56px;">
-                        <div style="background-color: #0a0909; height: 56px; line-height: 50px; text-align: center; color: whitesmoke;">
+                        <div style="background-color: #0a0909; height: 56px; line-height: 50px; text-align: center; color: whitesmoke; font-size: 25px">
                             <p>Familias</p>
                         </div>
-                        <ul style="border: 1px solid #c5c5c5; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; list-style: none; padding: 0;">
+                        <ul style="border: 1px solid rgba(0, 0, 0, 0.1); border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; list-style: none; padding: 0; font-size: 19px;">
                             @foreach($families as $family)
-                                <a href="" style="text-decoration: none;">
-                                    <li style="height: 40px; line-height: 40px; text-align: center; border-bottom: 1px solid #c5c5c5">{{ $family->name  }}</li>
+                                <a href="" style="text-decoration: none; color: black">
+                                    <li style="height: 50px; line-height: 50px; border-bottom: 1px solid rgba(0, 0, 0, 0.1)">
+                                        <span class="text-capitalize" style="margin-left: 15%;">{{ $family->name  }}</span>
+                                    </li>
                                 </a>
                             @endforeach
                         </ul>
