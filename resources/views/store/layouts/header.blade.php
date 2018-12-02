@@ -50,17 +50,11 @@
                                     <li>
                                         <a href="#">Categoria</a>
                                         <ul class="xt-dropdown">
-                                            <li>
-                                                <a  href="single-shop.html"><i class="fa flaticon-glasses"></i> Tecnologia </a>
-
-
-                                            </li>
-                                            <li>
-                                                <a  href="single-shop.html"><i class="fa flaticon-dress"></i> Jardin & Terrazas</a>
-
-                                            </li>
-                                            <li><a href="single-shop.html"><i class="fa flaticon-high-heel"></i> Decohogar</a></li>
-
+                                            @foreach($families as $family)
+                                                <li>
+                                                    <a  href="{{ url('/productos/familia/' . str_replace(' ', '-',$family->name)) }}"><i class="fa flaticon-glasses"></i>{{ $family->name  }}</a>
+                                                </li>
+                                            @endforeach
                                         </ul>
                                     </li>
                                 </ul>

@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Entities\Product;
 use Illuminate\Http\Request;
 
 class ProductDetailsController extends Controller
 {
-    public function view()
+    public function view($product_code)
     {
-        return view('store.product_detail');
+        return view('store.product_detail',['product' => Product::find($product_code)->first()]);
     }
 }

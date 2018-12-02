@@ -13,41 +13,12 @@
 
 Route::get('/', 'IndexController@index');
 
-Route::get('/products', 'ListProductsController@list');
+Route::get('/productos/familia/{family}', 'ListProductsController@byFamily');
 
-Route::get('/products/detail', 'ProductDetailsController@view');
+Route::get('/productos/{product_code}', 'ProductDetailsController@view');
 
-Route::get('/cart', 'CartController@view');
+Route::get('/carro', 'CartController@view');
 
-Route::get('/verify', 'VerifyController@verify');
+Route::get('/verificar', 'VerifyController@verify');
 
-Route::get('/login', 'LoginController@login');
-
-Route::get('/pay', 'PayController@pay');
-
-
-
-Route::group(['prefix' => 'admin'], function (){
-
-    Route::get('/dashboard', 'Admin\DashboardController@view');
-
-    Route::group(['prefix' => 'mantainers'], function (){
-
-        Route::get('/', 'Admin\MantainersController@view');
-
-        Route::group(['prefix' => 'families'], function (){
-            Route::get('/', 'Mantainers\FamiliesController@list');
-            Route::post('/create', 'Mantainers\FamiliesControlller@store');
-        });
-
-        Route::group(['prefix' => 'productos'], function (){
-            Route::get('/', 'Mantainers\ProductController@list');
-            Route::post('/create', 'Mantainers\ProductControlller@store');
-        });
-
-        Route::group(['prefix' => 'proveedor'], function (){
-            Route::get('/', 'Mantainers\ProveedorController@list');
-            Route::post('/create', 'Mantainers\ProveedorControlller@store');
-        });
-    });
-});
+Route::get('/pago', 'PayController@pay');

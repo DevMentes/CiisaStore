@@ -1,6 +1,5 @@
 @extends('store.layouts.app')
 @extends('store.layouts.header')
-@extends('store.layouts.sidebar')
 @extends('store.layouts.footer')
 
 @section('slider')
