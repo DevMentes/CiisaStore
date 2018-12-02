@@ -33,7 +33,7 @@
     <div id="top" style="height: 150px;">
         <div class="row">
             <div class="col-md-4">
-                <img src="{{asset('images/logociisa.png')}}" style="margin: 20px auto 0px 100px; width: 250px; height: 130px;">
+                <img src="{{asset('images/logociisa.png')}}" style="margin: 15px auto 5px 100px; width: 250px; height: 130px;">
             </div>
             <div class="col-md-4" style="text-align: center">
                 <tittle style="line-height: 150px; font-size: 50px; font-weight: bold">
@@ -67,7 +67,7 @@
             <div class="col-md-4">
                 <div class="row">
                     <div class="col-md-6">
-                        <ul class="navbar-nav mr-auto">
+                        <ul class="navbar-nav mr-auto" style="font-size: 20px;">
                             <li class="nav-item">
                                 <a class="nav-link" href="{{url('/')}}" style="color:whitesmoke;">Home</a>
                             </li>
@@ -108,7 +108,7 @@
                     </div>
                 </sidebar>
             </div>
-            <div class="9">
+            <div class="col-md-9">
                 @yield('content')
             </div>
         </div>

@@ -8,6 +8,8 @@ class Product extends Model
 {
     protected $primaryKey = "code";
 
+    public $incrementing = false;
+
     public $timestamps = false;
 
     protected $fillable = [

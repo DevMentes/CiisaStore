@@ -1,96 +1,23 @@
 @extends('store.layouts.app')
-@extends('store.layouts.header')
-@extends('store.layouts.footer')
 
-@section('products')
-    <div class="xt-product-subpage">
+@section('content')
+    <section style="margin-top: 50px;">
         <div class="container">
             <div class="row">
-                <!-- SIDEBAR -->
-                <aside class="col-md-3 product-sidebar">
-
-                    <div class="xt-side-deal">
-                        <div class="">
-
+                @foreach($products as $product)
+                    <div class="col-md-4">
+                        <div class="card" style="width: 90%; margin-left: auto; margin-right: auto; text-align: center;">
+                            <img class="card-img-top" src="{{asset($product->image_route)}}" style="height: 150px;" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">{{$product->name}}</h5>
+                                <p class="card-text">$ {{$product->price}}</p>
+                                <a href="{{url('/productos/' . $product->code)}}" class="btn btn-success">Ver producto</a>
+                            </div>
                         </div>
                     </div>
-                </aside>
-                <div class="col-md-9">
-                    <!--end singlw item info -->
-                    <div class="xt-feature-product">
-                        <div class="section-separator">
-                            <div class="xt-filter-nav">
-
-                                <div class="col-md-5 col-sm-5 col-xs-12">
-                                    <div class="xt-page-pagination">
-                                        <nav aria-label="Page navigation">
-                                            <ul class="pagination xt-pagination">
-                                                <li class="active"><a href="#">1</a></li>
-                                                <li><a href="#">2</a></li>
-                                                <li><a href="#">3</a></li>
-                                                <li><a href="#">4</a></li>
-                                                <li><a href="#" aria-label="Next"><i class="fa fa-caret-right"></i></a></li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="col-xs-12 xt-top-hr">
-                                    <hr class="xt-hr">
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                                <div class="xt-each-feature">
-                                    @foreach($products as $product)
-                                        <div class="col-md-4 col-sm-4">
-                                            <div class="xt-feature">
-                                                <div class="product-img">
-                                                    <a href="{{ url('/productos/' . $product->code) }}">
-                                                        <img src="{{ asset($product->image_route) }}" style="width:300px ; height: 270px;"      class="img-responsive">
-                                                    </a>
-                                                    <span class="product-tag xt-uppercase">sale!</span>
-                                                </div>
-                                                <div class="product-info">
-                                                    <div class="product-title">
-                                                        <span class="category xt-uppercase">{{ $product->name  }}</span>
-                                                        <span class="name xt-semibold">{{ $product->description }}</span>
-                                                    </div>
-                                                    <div class="price-tag pull-right">
-                                                        <br>
-                                                        <span class="new-price xt-semibold">$ {{ $product->price  }}</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    @endforeach
-                                </div>
-                            <div class="clearfix"></div>
-                            <div class="col-md-12 xt-bottom-hr">
-                                <hr class="xt-hr">
-                            </div>
-                            <div class="xt-filter-nav padding-bottom-60">
-                                
-                                
-                                
-                                <div class="col-md-3 col-sm-3 col-xs-12">
-                                    <div class="xt-page-pagination">
-                                        <nav aria-label="Page navigation">
-                                            <ul class="pagination xt-pagination">
-                                                <li class="active"><a href="#">1</a></li>
-                                                <li><a href="#">2</a></li>
-                                                <li><a href="#">3</a></li>
-                                                <li><a href="#">4</a></li>
-                                                <li><a href="#" aria-label="Next"><i class="fa fa-caret-right"></i></a></li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
-    </div>
+    </section>
+
 @endsection

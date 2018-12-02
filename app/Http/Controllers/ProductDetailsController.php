@@ -9,6 +9,6 @@ class ProductDetailsController extends Controller
 {
     public function view($product_code)
     {
-        return view('store.product_detail',['product' => Product::find($product_code)->first()]);
+        return view('store.product_detail',['product' => Product::where('code', $product_code)->first()]);
     }
 }
