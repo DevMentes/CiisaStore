@@ -90,19 +90,23 @@
 <content>
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <sidebar>
-                    <div style="background-color: ">
-
+                    <div id="families-sidebar"style="margin-top: -56px;">
+                        <div style="background-color: #0a0909; height: 56px; line-height: 50px; text-align: center; color: whitesmoke;">
+                            <p>Familias</p>
+                        </div>
+                        <ul style="border: 1px solid #c5c5c5; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; list-style: none; padding: 0;">
+                            @foreach($families as $family)
+                                <a href="" style="text-decoration: none;">
+                                    <li style="height: 40px; line-height: 40px; text-align: center; border-bottom: 1px solid #c5c5c5">{{ $family->name  }}</li>
+                                </a>
+                            @endforeach
+                        </ul>
                     </div>
-                    <ul>
-                        @foreach($families as $family)
-                            <li>{{ $family->name  }}</li>
-                        @endforeach
-                    </ul>
                 </sidebar>
             </div>
-            <div class="8">
+            <div class="9">
                 @yield('content')
             </div>
         </div>
