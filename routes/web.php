@@ -13,6 +13,8 @@
 
 Route::get('/', 'IndexController@index');
 
+Route::get('/productos', 'ListProductsController@all');
+
 Route::get('/productos/familia/{family}', 'ListProductsController@byFamily');
 
 Route::get('/productos/{product_code}', 'ProductDetailsController@view');

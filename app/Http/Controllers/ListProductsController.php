@@ -9,7 +9,7 @@ class ListProductsController extends Controller
 {
     public function all()
     {
-        return view('store.products');
+        return view('store.products', ['products' => Product::all()]);
     }
 
     public function byFamily($family)

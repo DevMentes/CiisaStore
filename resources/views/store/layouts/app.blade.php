@@ -69,10 +69,10 @@
                     <div class="col-md-6">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="#" style="color:whitesmoke;">Home</a>
+                                <a class="nav-link" href="{{url('/')}}" style="color:whitesmoke;">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" style="color:whitesmoke;">Productos</a>
+                                <a class="nav-link" href="{{url('/productos')}}" style="color:whitesmoke;">Productos</a>
                             </li>
                         </ul>
                     </div>
@@ -92,13 +92,13 @@
         <div class="row">
             <div class="col-md-3">
                 <sidebar>
-                    <div id="families-sidebar"style="margin-top: -56px;">
-                        <div style="background-color: #0a0909; height: 56px; line-height: 50px; text-align: center; color: whitesmoke; font-size: 25px">
+                    <div id="families-sidebar"style="margin-top: -50px;">
+                        <div style="background-color: #555555; height: 50px; line-height: 50px; text-align: center; color: whitesmoke; font-size: 25px">
                             <p>Familias</p>
                         </div>
                         <ul style="border: 1px solid rgba(0, 0, 0, 0.1); border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; list-style: none; padding: 0; font-size: 19px;">
                             @foreach($families as $family)
-                                <a href="" style="text-decoration: none; color: black">
+                                <a href="{{url('/productos/familia/' . str_replace(' ', '-',$family->name))}}" style="text-decoration: none; color: #555555">
                                     <li style="height: 50px; line-height: 50px; border-bottom: 1px solid rgba(0, 0, 0, 0.1)">
                                         <span class="text-capitalize" style="margin-left: 15%;">{{ $family->name  }}</span>
                                     </li>
