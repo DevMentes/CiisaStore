@@ -29,6 +29,16 @@
 </head>
 <body>
 
+@php
+
+use App\Cart;
+
+if (!Session::has('cart')){
+    Session::put('cart', new Cart());
+}
+
+@endphp
+
 <header>
     <div id="top" style="height: 150px;">
         <div class="row">

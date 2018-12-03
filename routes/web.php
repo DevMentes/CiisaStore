@@ -21,6 +21,8 @@ Route::get('/productos/{product_code}', 'ProductDetailsController@view');
 
 Route::get('/carro', 'CartController@view');
 
+Route::get('/carro/añadir/{product_code}/{quantity}', 'CartController@add');
+
 Route::get('/verificar', 'VerifyController@verify');
 
 Route::get('/pago', 'PayController@pay');
