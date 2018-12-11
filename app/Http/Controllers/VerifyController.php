@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class VerifyController extends Controller
 {
 
-    public function verify()
+    public function verify(Request $request)
     {
         return view('store.verify');
     }

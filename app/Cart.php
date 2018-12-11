@@ -37,9 +37,9 @@ class Cart
 
     private function delete(string $code)
     {
-        for ($i = 0; $i < count($this->items); $i++){
-            if ($this->items[$i]->code() === $code){
-                unset($this->items[$i]);
+        foreach ($this->items as $key => $item){
+            if ($item->code() === $code){
+                unset($this->items[$key]);
             }
         }
     }

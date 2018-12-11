@@ -40,27 +40,29 @@ if (!Session::has('cart')){
 @endphp
 
 <header>
-    <div id="top" style="height: 150px;">
+    <div id="top" style="height: 120px;">
         <div class="row">
             <div class="col-md-4">
-                <img src="{{asset('images/logociisa.png')}}" style="margin: 15px auto 5px 100px; width: 250px; height: 130px;">
+                <img src="{{asset('images/logociisa.png')}}" style="margin: 15px auto 5px 100px; width: 170px; height: 100px;">
             </div>
             <div class="col-md-4" style="text-align: center">
-                <tittle style="line-height: 150px; font-size: 50px; font-weight: bold">
+                <tittle style="line-height: 150px; font-size: 30px; font-weight: bold" >
                     CiisaStore
                 </tittle>
             </div>
-            <div class="col-md-4" style="line-height: 150px; font-size: 50px;">
+            <div class="col-md-4" style="line-height: 120px; font-size: 30px;">
                 <div class="row">
-                    <div class="col-md-4">
-                        <i class="fab fa-facebook-square"></i>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-1">
+                        <a href="https://www.facebook.com/ipciisa"><i style="color: darkblue;" class="fab fa-facebook-square" ></i></a>
                     </div>
-                    <div class="col-md-4">
-                        <i class="fab fa-twitter-square"></i>
+                    <div class="col-md-1">
+                        <a href="https://twitter.com/ip_ciisa"><i style="color: deepskyblue" class="fab fa-twitter-square"></i></a>
                     </div>
-                    <div class="col-md-4">
-                        <i class="fab fa-youtube"></i>
+                    <div class="col-md-1">
+                        <a href="https://www.youtube.com/user/CIISAIP"><i style="color: red;" class="fab fa-youtube"></i></a>
                     </div>
+                    <div class="col-md-5"></div>
                 </div>
             </div>
         </div>
@@ -76,7 +78,8 @@ if (!Session::has('cart')){
             </div>
             <div class="col-md-4">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5">
                         <ul class="navbar-nav mr-auto" style="font-size: 20px;">
                             <li class="nav-item">
                                 <a class="nav-link" href="{{url('/')}}" style="color:whitesmoke;">Home</a>
@@ -87,9 +90,11 @@ if (!Session::has('cart')){
                         </ul>
                     </div>
                     <div class="col-md-6" style="text-align: center">
-                        <a href="{{url('/carro')}}" style="color: whitesmoke; font-size: 30px;">
-                            <i class="fas fa-shopping-cart"></i>
-                        </a>
+                        @if(!empty(Session::get('cart')->items()))
+                            <a href="{{url('/carro')}}" style="color: whitesmoke; font-size: 30px;">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                        @endif
                     </div>
                 </div>
             </div>
@@ -103,10 +108,10 @@ if (!Session::has('cart')){
             <div class="col-md-3">
                 <sidebar>
                     <div id="families-sidebar"style="margin-top: -50px;">
-                        <div style="background-color: #555555; height: 50px; line-height: 50px; text-align: center; color: whitesmoke; font-size: 25px">
+                        <div style="background-color: #555555; height: 50px; line-height: 50px; text-align: center; color: whitesmoke; font-size: 20px">
                             <p>Familias</p>
                         </div>
-                        <ul style="border: 1px solid rgba(0, 0, 0, 0.1); border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; list-style: none; padding: 0; font-size: 19px;">
+                        <ul style="border: 1px solid rgba(0, 0, 0, 0.1); border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; list-style: none; padding: 0; font-size: 18px;">
                             @foreach($families as $family)
                                 <a href="{{url('/productos/familia/' . str_replace(' ', '-',$family->name))}}" style="text-decoration: none; color: #555555">
                                     <li style="height: 50px; line-height: 50px; border-bottom: 1px solid rgba(0, 0, 0, 0.1)">

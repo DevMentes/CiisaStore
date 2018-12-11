@@ -25,4 +25,10 @@ Route::get('/carro/añadir/{product_code}/{quantity}', 'CartController@add');
 
 Route::get('/verificar', 'VerifyController@verify');
 
-Route::get('/pago', 'PayController@pay');
+Route::post('/customer/register', 'RegisterCustomerController@register');
+
+Route::get('/confirmar', 'PayController@show');
+
+Route::get('/pagar', 'PayController@pay');
+
+Route::post('/transaccion', 'PayController@doPay');

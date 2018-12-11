@@ -21,4 +21,9 @@ class Product extends Model
         'stock_treshold',
         'family_id'
     ];
+
+    public function provider()
+    {
+        $this->belongsTo(Provider::class);
+    }
 }
