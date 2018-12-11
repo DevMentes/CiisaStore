@@ -11,7 +11,11 @@
                         @php
                             $cart = Session::get('cart');
                         @endphp
-
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                        </tr>
                         @foreach($cart->items() as $item)
                             <tr>
                                 <td>{{$item->name()}}</td>
@@ -21,7 +25,7 @@
                         @endforeach
                         <tr>
                             <td></td>
-                            <td>Total</td>
+                            <td><strong>Total</strong></td>
                             <td>{{$cart->total()}}</td>
                         </tr>
                     </table>

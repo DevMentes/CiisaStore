@@ -31,8 +31,10 @@
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
-
-                    <form action="{{ url('/transaccion') }}" method="POST" style="margin-top: 100px;">
+                    <hr>
+                    <h2 style="text-align: center">Transacción</h2>
+                    <hr>
+                    <form action="{{ url('/transaccion') }}" method="POST" style="margin-top: 50px;">
 
                         @csrf
                         <div class="form-group">
